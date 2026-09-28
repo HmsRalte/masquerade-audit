@@ -11,7 +11,7 @@ The two-knob audit tests whether a multimodal reliability signal attributes fail
 ## Repository layout
 
 ```
-pilot/      Proof of concept on UCI Handwritten, then a 200-frame KITTI pilot
+step*.ipynb  (root)  Pilot: proof of concept on UCI Handwritten and a 200-frame KITTI pilot
 scale_1k/   1,000-frame development scale, including all robustness studies
 full/       Full 7,481-frame KITTI instantiation (main results)
 ```
@@ -30,8 +30,6 @@ Each notebook is saved **with its outputs**. These outputs are the recorded meas
 | Sec. VI-C scale trajectory (development scale) | `scale_1k/` | `step7` to `step10` |
 | **Sec. VII, Figs. 7 and 8** (drift caps, corruption family B, seeds, slope estimators) | `scale_1k/` | `step11_stress_tests.ipynb` |
 | TMC reproduction on the pilot benchmark (Sec. IV-C) | `pilot/` | Handwritten notebooks |
-
-**Note:** all robustness studies (Sec. VII) are run at the 1,000-frame development scale, as stated in the paper. Run `step11` only inside `scale_1k/`, after `scale_1k/step7` has built the 1k dataset.
 
 ## Setup
 
